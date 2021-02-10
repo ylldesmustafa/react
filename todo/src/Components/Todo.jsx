@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react';
+
 
 function Todo(props) {
     return (
         <div>
+
             {props.item}
         </div>
     )
