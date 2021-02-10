@@ -7,6 +7,11 @@ function TodoForm() {
     completed: false
   });
 
+function taskInputChange(e) {
+  setToDo({...todo, task: e.target.value });
+}
+
+
   return 
   <form>
     <input />
