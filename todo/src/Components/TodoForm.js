@@ -1,9 +1,9 @@
 import React from "react"; 
 
-function TodoForm() {
+function TodoForm(  {addTodo} ) {
   const [todo, setToDo] = useState({
     id: "",
-    task: "",
+    task: "", 
     completed: false
   });
 
@@ -11,6 +11,9 @@ function taskInputChange(e) {
   setToDo({...todo, task: e.target.value });
 }
 
+function submitChange(e) {
+  e.preventDefault();
+}
 
   return 
   <form>
