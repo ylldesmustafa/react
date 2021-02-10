@@ -14,7 +14,12 @@ function taskInputChange(e) {
 
   return 
   <form>
-    <input />
+    <input 
+    name="task"
+    type="text"
+    value={todo.task}
+    onChange={taskInputChange} 
+    />
     <button />
   </form>
 }
