@@ -1,11 +1,15 @@
 // import logo from './logo.svg';
 import { useState } from 'react';
+import "./App.css";
+import TodoForm from "./Components/TodoForm";
 
 function App() {
 
-  // const [todos, setTodos] = useState(["eat", "sleep", "code", "pray", "repeat"]);  //sample todo items.  these will need to be changed in your app.  Just filler todos, although they are quite important!
-
   const [todos, setTodos] = useState([]);
+
+  function addTodo(todo) {
+    setTodos([todo,...todos]);
+  }
 
   return (
     <div className="App">
