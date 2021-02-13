@@ -46,7 +46,8 @@ function App() {
     <div className="App">
        <Typography style={{ padding: 16 }} variant="h1">To Do List</Typography>
        <TodoForm addTodo={addTodo} />
-       <TodoList 
+       {console.log(todos)}
+      <TodoList 
        todos={todos} 
        removeTodo={removeTodo}
        toggleComplete={toggleComplete}

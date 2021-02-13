@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 
-function Todo(props) {
+function Todo({todo}) {
     return (
         <div>
-
-            {props.item}
+            {console.log(todo)}
+            {todo.task}
         </div>
     )
 }

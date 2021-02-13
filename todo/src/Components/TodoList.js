@@ -1,19 +1,21 @@
 import React from "react";
-//import Todo from "./Todo";
+import Todo from "./Todo";
 import { List } from "@material-ui/core";
 
 function TodoList({ todos, removeTodo, toggleComplete }) {
   return (
-    <List>
+    //<List>
+    <div>
       {todos.map(todo => (
-          <TodoList 
-            key={todo.id} 
+     <Todo 
+        key={todo.id} 
             todo={todo} 
             removeTodo={removeTodo}
             toggleComplete={toggleComplete}
-          />
+          /> 
       ))}
-    </List>
+    </div>
+   // </List>
   );
 }
 
